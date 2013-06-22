@@ -25,7 +25,7 @@
 
 # Limitations
 
-  You can use `addListener` on the element query just yet. I might look at adding
+  You can't use `addListener` on the element query just yet. I might look at adding
   this if it's needed, but I just don't need it yet.
 
 ## License
