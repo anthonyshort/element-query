@@ -1,0 +1,16 @@
+{
+  "name": "element-query",
+  "repo": "anthonyshort/element-query",
+  "description": "Element queries don't exist. This may be the next best thing.",
+  "version": "0.0.1",
+  "keywords": [],
+  "development": {
+    "chaijs/chai": "*"
+  },
+  "dependencies": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
