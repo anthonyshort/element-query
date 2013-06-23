@@ -10,18 +10,13 @@ describe('Element Query', function(){
     document.body.appendChild(this.div);
   });
 
-  it('should correct run a width media query', function(){
-    query(this.div, '(max-width: 100px)').matches.should.be.true;
-    query(this.div, '(min-width: 500px)').matches.should.be.false;
+  afterEach(function(){
+    document.body.removeChild(this.div);
   });
 
-  it('should correct run a height media query', function(){
-    query(this.div, '(max-height: 100px)').matches.should.be.true;
-    query(this.div, '(min-height: 500px)').matches.should.be.false;
-  });
-
-  it('should remove the iframes', function(){
-    document.querySelectorAll('iframe').length.should.equal(0);
+  it('should match a media query on an element', function(){
+    query(this.div, '(max-width: 100px)').should.equal(true);
+    query(this.div, '(min-width: 10000px)').should.equal(false);
   });
 
 });

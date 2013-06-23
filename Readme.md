@@ -23,6 +23,9 @@
   It creates an iframe, gives it the same dimensions of the element you are testing,
   adds it to the page and uses the iframes `matchMedia` to test the query.
 
+  element-query creates a hidden iframe on the page and re-uses each time the method
+  is called. While a bit dirty, it is much, much faster.
+
 # Limitations
 
   You can't use `addListener` on the element query just yet. I might look at adding
