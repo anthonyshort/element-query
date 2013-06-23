@@ -24,7 +24,7 @@
   adds it to the page and uses the iframes `matchMedia` to test the query.
 
   element-query creates a hidden iframe on the page and re-uses each time the method
-  is called. While a bit dirty, it is much, much faster.
+  is called. While a bit dirty, it is [much, much faster](http://jsperf.com/element-queries-with-iframe).
 
 # Limitations
 
